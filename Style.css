@@ -175,3 +175,56 @@ footer {
     color: var(--White);
     font-size: 12px;
 }
+
+
+
+
+
+
+@media (max-width: 767px) { 
+    nav{
+        display:none;
+    }
+
+    main {
+        margin: 20px;
+        padding: 0;
+        float: left;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Green {
+        padding: 0px 20px;
+        height: 230px;
+        border-radius: 20px;
+    }
+
+    .Black {
+        padding: 0px 20px;
+        height: 230px;
+        border-radius: 20px;
+    }
+
+    .Green ion-icon {
+        position: relative;
+        top: 20px;
+    }
+    
+    .Black ion-icon {
+        position: relative;
+        top: 20px;
+    }
+
+    .White {
+        padding: 0px 20px;
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    footer {
+        width: 90%;
+        padding: 20px;
+        float: left;
+    }
+}
