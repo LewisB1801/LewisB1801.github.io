@@ -161,3 +161,17 @@ ion-icon {
 }
 
 
+
+
+
+footer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px 10px;
+    float: right;
+    background-color: var(--Black);
+    color: var(--White);
+    font-size: 12px;
+}
