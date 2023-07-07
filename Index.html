@@ -1,291 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-:root {
-    --Green: #008080;
-    --Black: #2d2d2d;
-    --White: #f8f8f8;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Guidelines</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Kanit', sans-serif;
-}
+<body>
+  <header>
+    <nav>
 
-nav {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 20px 40px;
-    background-color: var(--Black);
-    height: 100vh;
-    width: 10vw;
-    display: flex;
-    position: fixed;
-    float: left;
-}
+        <div class="nav-top">
+            <img src="Assts/Logo.png">
+            <ul>
+                <li><a href="#Intro">About</a></li>
+                <li><a href="#Font">Font</a></li>
+                <li><a href="#Colour">Colour</a></li>
+                <li><a href="#Logo">Logo</a></li>
+                <li><a href="#Marker"></a></li>
+                <li><a href="#Layout">Layout</a></li>
+              </ul>
+        </div>
 
-nav img {
-    width: 140px;
-    height: auto;
-    margin-bottom: 20px;
-}
+        <div class="nav-bottom">
 
-nav ul {
-    list-style-type: none;
-    position: relative;
-}
+        </div>
 
-nav li {
-    padding-top: 30px;
-}
+    </nav>
+  </header>
 
-nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--White);
-    font-weight: 400;
-}
+  <main>
+    <section id="Intro">
 
-nav a:hover {
-    border: 2px solid var(--Green);
-    border-radius: 10px;
-    padding: 5px;
-    color: var(--Green);
-}
+      <div class="Left">
+        <h1>SpotHop</h1>
+        <h2>Brand Guidelines</h2>
 
-main {
-    width: 70vw;
-    height: auto;
-    float: right;
-    margin: 40px 40px;
-}
+        <h3>- What is SpotHop?</h3>
+        <p>SpotHop is a dynamic and user-centric app that revolutionizes the way people explore and share their favorite locations. It serves as a comprehensive platform for travel enthusiasts and adventure seekers to connect, discover, and rate points of interest. With SpotHop, users can easily share their favorite spots, provide ratings and reviews, and connect with like-minded individuals to enhance their travel experiences.</p>
+        
+        <h3>- What is the main functionality</h3>
+        <p>SpotHop is designed to inspire and facilitate exploration. Users can drop pins on the map to mark and share their favorite points of interest, ranging from stunning viewpoints to hidden gems off the beaten path. They can rate and review these spots, providing valuable insights and recommendations for fellow travelers.</p>
+        
+        <h3>- Social Features?</h3>
+        <p>SpotHop encourages social connections by allowing users to follow other travelers, join thematic groups, and engage in discussions about their shared passion for exploration. Users can interact through comments, likes, and direct messaging, fostering a sense of community and facilitating the exchange of travel tips and experiences.</p>
+        
+        <p><br>SpotHop is not just a location-sharing app; it's a gateway to a world of adventure, connection, and discovery. Whether embarking on a solo journey, planning a group trip, or simply looking for inspiration, SpotHop empowers users to explore the world with confidence and enthusiasm, all while connecting with a vibrant community of fellow explorers.</p>
+      </div>
 
-section {
-    width: 90%;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-}
+    </section>
 
-h1 {
-    font-weight: 600;
-    font-size: 48px;
-    text-transform: capitalize;
-    color: var(--Green);
-    margin: 0;
-}
+    <section id="Font">
+      <h1>Font Style</h1>
+      <h2>Font family & usage</h2>
 
-h2 {
-    position: relative;
-    font-size: 32px;
-    font-weight: 100;
-    margin: 0;
-    bottom: 20px;
-}
+      <h3>- Font Used</h3>
+      <p>SpotHop uses the font known as <span>"KANIT"</span> </p>
+      <p>Kanit typeface family is a formal Loopless Thai and Sans Latin design. It is a combination of concepts, mixing a Humanist Sans Serif motif with the curves of Capsulated Geometric styles that makes it suitable for various uses, contemporary and futuristic.</p>
+      <h4>- LICENSE</h4>
+      <p>These fonts are licensed under the Open Font License. You can use them in your products & projects – print or digital, commercial or otherwise.</p>
+    </section>
 
-h3 {
-    margin: 10px 0;
-}
+    <section id="Colour">
+      <h1>Colour Palette</h1>
+      <h2>Colour scheme & branding</h2>
 
-#Intro, #Font p {
-    font-size: 24;
-    font-weight: 400;
-    position: relative;
-    left: 30px;
-}
+      <div class="Colours">
+        <div class="Green">
+          <h3>Green</h3>
+          <p id="Green">#008080</p>
+          <p>R:0 G:128 B:128</p>
+          <p>C:100 M:0 Y:0 K:50</p>
+          <ion-icon onclick="getGreen()" name="clipboard"></ion-icon>
+        </div>
+        <div class="Black">
+          <h3>Black</h3>
+          <p id="Black">#2D2D2D</p>
+          <p>R:45 G:45 B:45</p>
+          <p>C:0 M:0 Y:0 K:82</p>
+          <ion-icon onclick="getBlack()" name="clipboard"></ion-icon>
+        </div>
+        <div class="White">
+          <h3>White</h3>
+          <p id="White">#F8F8F8</p>
+          <p>R:248 G:248 B:248</p>
+          <p>C:0 M:0 Y:0 K:3</p>
+          <ion-icon onclick="getWhite()" name="clipboard"></ion-icon>
+        </div>
+      </div>
 
-p span {
-    font-size: 20px;
-    font-weight: 600;
-}
+    </section>
 
-.Colours {
-    display: flex;
-}
+    <section id="Logo">
+      <h1>Logo Branding</h1>
+      <h2>Logo styles & usage</h2>
 
-.Colours p {
-    font-size: 12px;
-}
+      <div class="Wrapper">
+        <div>
+          <img src="Assts/Logo.png" alt="">
+        </div>
+  
+        <div class="Right">
+          <h3>Analysis</h3>
+          <p>The SpotHop logo cleverly combines the words "Spot Hop" with a marker icon integrated into the letter "O" in "Spot." The marker extends downward, symbolizing pinpointing locations and creating a visually appealing design. This logo effectively captures the essence of exploration and movement between spots. The clean lines and bold typography further enhance its impact and memorability.</p>
+        </div>
+      </div>
 
-.Colours h3 {
-    margin: 0;
-    margin-top: 8px;
-}
+      <div class="Wrapper">
+        <div>
+          <img src="Assts/Logo Black.png" alt="">
+          <h3>Logo Usage</h3>
+          <p style="margin-bottom: 20px;">The SpotHop logo should be used consistently and thoughtfully to maintain a strong and cohesive brand identity. Here are some guidelines for using the logo effectively:</p>
+          <p>By following these guidelines, you can effectively utilize the SpotHop logo to build brand recognition and maintain a consistent visual identity across various platforms and materials.</p>
+        </div>
+  
+        <div class="Right">          
+          <h2><span>[1]</span> Clear Space: Ensure that there is sufficient clear space around the logo to maintain its visibility and legibility. Avoid crowding it with other elements or text.</h2>
+          <h2><span>[2]</span> Size and Scalability: Use the logo in a size that maintains its readability across different platforms and materials. It should be easily recognizable even when scaled down or enlarged.</h2>
+          <h2><span>[3]</span> Placement: Position the logo prominently in a way that maximizes its visibility and impact. Consider placing it at the top left corner of digital assets, such as the website or app interface, to reinforce brand recognition.</h2>
+          <h2><span>[4]</span> Color Variations: The SpotHop logo can be used in its standard Green, Black or White versions for most applications. However, if required, it can also be used in a colour variation that aligns with the brand's colour palette, ensuring consistency and recognition.</h2>
+          <h2><span>[5]</span> Background Contrast: Choose a background that provides sufficient contrast to the logo, ensuring its visibility and legibility. Test the logo on different backgrounds to ensure optimal contrast and readability.</h2>
+          <h2><span>[6]</span> Proportions: Maintain the original proportions of the logo and avoid distorting or stretching it. This helps preserve the integrity of the design and ensures visual harmony.</h2>
+        </div>
+      </div>
 
-.Green {
-    background-color: var(--Green);
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    border-radius: 50%;
-    margin-right: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-}
+    </section>
 
-.Black {
-    background-color: var(--Black);
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    border-radius: 50%;
-    margin-right: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-}
+    <section id="Marker">
+      <h1>Marker</h1>
+      <h2>Marker Use & Style</h2>
 
-.White {
-    background-color: var(--White);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid var(--Black);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: var(--Black);
-}
+      <div class="Wrapper">
+        <div>
+          <img src="Assts/Final-Marker-WhiteOutline.png" alt="">
+          <img src="Assts/Final-Marker-BlackOutline.png" alt="">
+        </div>
+  
+        <div class="Right">          
+          <h2><span>[1]</span>The marker has 2 variations Green with white outline & Green with black outline.</h2>
+          <h2><span>[2]</span>The marker has 2 uses, placing markers within the app and the favicon with the option to use as a icon.</h2>
+          <h2><span>[3]</span>The marker is set to a size perfect for the mobile app and should not be made larger or smaller.</h2>
+        </div>
+    </section>
 
-.White ion-icon {
-    color: var(--Black);
-}
+    <section id="Layout">
+      <h1>Layout</h1>
+      <h2>Text & logo positioning</h2>
+    </section>
 
-ion-icon {
-    color: var(--White);
-    cursor: pointer;
-    font-size: 40px;
-    margin-top: 10px;
-}
+    <section>
+      <h1>TO-DO</h1>
+      <p>- Make a notification when clicked clipboard</p>
+      <p>- Make an animation when hover the clipboard</p>
+    </section>
 
-.Wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 80px;
-}
+  </main>
 
-#Logo {
-    margin: 0;
-}
+  <footer>
+    © 2023 SpotHop. All rights reserved. Unauthorized use of SpotHop's brand elements is prohibited. By accessing these guidelines, you agree to adhere to the specified restrictions. SpotHop reserves the right to enforce its intellectual property rights.
+  </footer>
 
-#Logo img {
-    width: 200px;
-    height: auto;
-}
+  <script src="Script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 
-.Wrapper h2 {
-    padding: 10px 0;
-    font-size: 16px;
-}
-
-h2 span {
-    color: var(--Green) !important;
-    font-weight: 400;
-}
-
-.Right {
-    margin-left: 50px;
-}
-
-#Marker .Wrapper {
-    align-items: normal;
-}
-
-#Marker img {
-    position: relative;
-    top: 30px;
-}
-
-
-
-
-footer {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 20px 10px;
-    float: right;
-    background-color: var(--Black);
-    color: var(--White);
-    font-size: 12px;
-}
-
-
-
-@media (max-width: 767px) { 
-    nav{
-        display:none;
-    }
-
-    main {
-        margin: 40px;
-        padding: 0;
-        float: left;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Colours {
-        position: relative;
-        right: 25px;
-    }
-
-    .Green {
-        padding: 0px 20px;
-        height: 230px;
-        border-radius: 20px;
-    }
-
-    .Black {
-        padding: 0px 20px;
-        height: 230px;
-        border-radius: 20px;
-    }
-
-    .Green ion-icon {
-        position: relative;
-        top: 20px;
-    }
-    
-    .Black ion-icon {
-        position: relative;
-        top: 20px;
-    }
-
-    .White {
-        padding: 0px 20px;
-        height: 220px;
-        border-radius: 20px;
-    }
-
-    .Wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Wrapper p {
-        margin: 20px 0;
-    }
-    
-    #Marker img {
-        margin-bottom: 40px;
-    }
-
-    .Right {
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-
-    footer {
-        width: 90%;
-        padding: 20px;
-        float: left;
-    }
-}
+</html>
