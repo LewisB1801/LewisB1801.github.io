@@ -117,6 +117,7 @@ p span {
     background-color: var(--Green);
     width: 150px;
     height: 150px;
+    padding: 5px;
     border-radius: 50%;
     margin-right: 40px;
     text-align: center;
@@ -129,6 +130,7 @@ p span {
     background-color: var(--Black);
     width: 150px;
     height: 150px;
+    padding: 5px;
     border-radius: 50%;
     margin-right: 40px;
     text-align: center;
@@ -160,6 +162,44 @@ ion-icon {
     margin-top: 10px;
 }
 
+.Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#Logo {
+    margin: 0;
+}
+
+#Logo img {
+    width: 200px;
+    height: auto;
+}
+
+.Wrapper h2 {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+h2 span {
+    color: var(--Green) !important;
+    font-weight: 400;
+}
+
+.Right {
+    margin-left: 50px;
+}
+
+#Marker .Wrapper {
+    align-items: normal;
+}
+
+#Marker img {
+    position: relative;
+    top: 30px;
+}
 
 
 
@@ -178,20 +218,22 @@ footer {
 
 
 
-
-
-
 @media (max-width: 767px) { 
     nav{
         display:none;
     }
 
     main {
-        margin: 20px;
+        margin: 40px;
         padding: 0;
         float: left;
         justify-content: center;
         align-items: center;
+    }
+
+    .Colours {
+        position: relative;
+        right: 25px;
     }
 
     .Green {
@@ -220,6 +262,25 @@ footer {
         padding: 0px 20px;
         height: 220px;
         border-radius: 20px;
+    }
+
+    .Wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Wrapper p {
+        margin: 20px 0;
+    }
+    
+    #Marker img {
+        margin-bottom: 40px;
+    }
+
+    .Right {
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
     }
 
     footer {
